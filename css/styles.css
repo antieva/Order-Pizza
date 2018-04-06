@@ -23,6 +23,23 @@ h3, button {
   margin-left: 25%;
 }
 
+h4 {
+  font-size: larger;
+}
+
 label, button, h2, h3, #outputPart1 {
   margin-top: 5%;
 }
+
+footer {
+  font-size: 1.1em;
+  margin-top: 10%;
+  padding: 20px 50px;
+  color: white;
+  border-radius: 5px;
+}
+ footer li {
+   display: inline;
+   margin: 0 80px;
+   color: #938d8f;
+ }
