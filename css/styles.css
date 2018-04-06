@@ -1,0 +1,28 @@
+body {
+  font-size: 14pt;
+}
+
+select#size, select#crust {
+  width: 50%;
+}
+
+.output {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-left: 20%;
+}
+
+h3, button {
+  margin-left: 25%;
+}
+
+label, button, h2, h3, #outputPart1 {
+  margin-top: 5%;
+}

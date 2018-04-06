@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Order Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>custom artisan style pizzas</h1>
+      <h1>superfast</h1>
+      <p></p>
+      <h2>Create Your Own Pizza</h2>
+      <form id="pizza-order">
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label" for="size">Size</label>
+            <select class="form-control short" id="size">
+              <option value="6">Small (6-inch pizza)</option>
+              <option value="8">Medium (11-inch pizza)</option>
+              <option value="10">Large (16-inch pizza)</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="control-label" for="crust">Crust</label>
+            <select class="form-control short" id="crust">
+              <option value="0">Original</option>
+              <option value="2">Gluten-free</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Toppings:</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <label class="control-label" for="veggies">Veggies</label><br>
+                <input type="checkbox" name="veggies" value="artichokes">artichokes<br>
+                <input type="checkbox" name="veggies" value="argula">argula<br>
+                <input type="checkbox" name="veggies" value="basil">basil<br>
+                <input type="checkbox" name="veggies" value="black olives">black olives<br>
+                <input type="checkbox" name="veggies" value="cilantro">cilantro<br>
+                <input type="checkbox" name="veggies" value="green bell peppers">green bell peppers<br>
+                <input type="checkbox" name="veggies" value="jalapenos">jalapenos<br>
+                <input type="checkbox" name="veggies" value="mushrooms">mushrooms<br>
+                <input type="checkbox" name="veggies" value="pineapple">pineapple<br>
+                <input type="checkbox" name="veggies" value="red onion">red onion<br>
+                <input type="checkbox" name="veggies" value="roasted garlic">roasted garlic<br>
+                <input type="checkbox" name="veggies" value="tomatoes">tomatoes<br>
+              </div>
+
+              <div class="col-md-6">
+                <label class="control-label" for="meat">Meat</label><br>
+                <input type="checkbox" name="meat" value="anchovies">anchovies<br>
+                <input type="checkbox" name="meat" value="bacon">bacon<br>
+                <input type="checkbox" name="meat" value="grilled chicken">grilled chicken<br>
+                <input type="checkbox" name="meat" value="ground beef">ground beef<br>
+                <input type="checkbox" name="meat" value="Italian sausage">italian sausage<br>
+                <input type="checkbox" name="meat" value="pepperoni">pepperoni<br>
+                <input type="checkbox" name="meat" value="salami">salami<br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label class="control-label" for="sauce">Sauce</label><br>
+                <input type="checkbox" name="sauce" value="bbq sauce">bbq sauce<br>
+                <input type="checkbox" name="sauce" value="garlic rup">garlic rup<br>
+                <input type="checkbox" name="sauce" value="olive oil">olive oil<br>
+                <input type="checkbox" name="sauce" value="pesto">pesto<br>
+                <input type="checkbox" name="sauce" value="red sauce">red sauce<br>
+                <input type="checkbox" name="sauce" value="white sauce">white sauce<br>
+              </div>
+              <div class="col-md-6">
+                <label class="control-label" for="cheese">Cheese</label><br>
+                <input type="checkbox" name="cheese" value="dairy free">dairy free<br>
+                <input type="checkbox" name="cheese" value="feta">feta<br>
+                <input type="checkbox" name="cheese" value="gorgonzola">gorgonzola<br>
+                <input type="checkbox" name="cheese" value="mozzarella">mozzarella<br>
+                <input type="checkbox" name="cheese" value="parmesan">parmesan<br>
+                <input type="checkbox" name="cheese" value="recotta">recotta<br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-info">Order</button>
+      </form>
+
+      <div class="output" id="outputPart1">
+        <h4>Your order summary:</h4>
+        <p>You order <span id="pizzaSize"></span> pizza with <span id="pizzaCrust"></span> crust.</p>
+      </div>
+      <div class="output" id="outputPart2">
+        <p>Sauce:</p>
+        <ul id="pizzaSauce">
+
+        </ul>
+      </div>
+      <div class="output" id="outputPart3">
+        <p>Cheese:</p>
+        <ul id="pizzaCheese">
+
+        </ul>
+      </div>
+      <div class="output" id="outputPart4">
+        <p>Toppings:</p>
+        <ul id="pizzaToppings">
+
+        </ul>
+      </div>
+      <div class="output" id="pizzaPrice">
+        <h4>Your total is <span id="price"></span></h4>
+      </div>
+    </div>
+
+  </body>
+</html>

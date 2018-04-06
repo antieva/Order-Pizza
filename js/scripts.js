@@ -16,10 +16,7 @@ function Pizza(size, crust) {
 
 // Prototype function tocalculate pizza cost.
 Pizza.prototype.cost = function() {
-  var price = parseInt(this.size) + this.toppings.length + parseInt(this.crust);
-  for(var i = 0; i < this.cheese.length; i++) {
-    price += 0.30;
-  }
+  var price = parseInt(this.size) + this.toppings.length + parseInt(this.crust) + (this.cheese.length * 0.30);
   return price;
 }
 
