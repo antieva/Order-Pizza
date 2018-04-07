@@ -40,9 +40,7 @@ _The user has to choose size of the pizza: small($6.00), medium($8.00), or large
   * _Example Input: Pizza size checked: "small", crust checked: "original", sauce checked: "bbq", toppings: meet checked: "bacon", "pepperoni", veggies checked: "mushrooms", "basil", "red onion", cheese checked: "mozzarella", "ricotta"._
   * _Example Output: [Your order total is $8.60]_
 
-* _If the user miss one of the fields, they will get an error message: "Please finish your order."_
-  * _Example Input: Pizza size checked: "small", crust checked: "original", sauce not checked, toppings: meet checked: "bacon", "pepperoni", veggies checked: "mushrooms", "basil", "red onion", cheese checked: "mozzarella", "ricotta"._
-  * _Example Output: [Please finish your order.]_
+
 
 ## Setup/Installation Requirements
 
