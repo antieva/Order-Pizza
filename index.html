@@ -9,11 +9,15 @@
     <title>Order Pizza</title>
   </head>
   <body>
-    <div class="container">
-      <h1>custom artisan style pizzas</h1>
-      <h1>superfast</h1>
-      <p></p>
+    <div id="heading" class="container">
+      <h1>custom artisan style pizzas
+      <br>superfast</h1>
+    </div>
+
+    <div id="body" class="container">
+
       <h2>Create Your Own Pizza</h2>
+      <p id="message">DON’T BE SHY, GET EXACTLY WHAT YOU LOVE.</p>
       <form id="pizza-order">
         <div class="row">
           <div class="col-md-6">
@@ -85,7 +89,7 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-info">Order</button>
+        <button type="submit" class="btn btn-success">ORDER</button>
       </form>
 
       <div class="output" id="outputPart1">
@@ -111,7 +115,7 @@
         </ul>
       </div>
       <div class="output" id="pizzaPrice">
-        <h4>Your total is $<span id="price"></span></h4>
+        <h4>Your total is $<span id="price"></span>. Thank you!</h4>
       </div>
 
       <footer>

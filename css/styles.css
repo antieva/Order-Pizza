@@ -1,5 +1,10 @@
 body {
   font-size: 14pt;
+  color: white;
+}
+
+#body {
+  background-image: url(../img/5.jpg);
 }
 
 select#size, select#crust {
@@ -10,17 +15,34 @@ select#size, select#crust {
   display: none;
 }
 
+#heading {
+  background-image: url(../img/img.jpg);
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#message {
+  margin-left: 5%;
+}
+
 h1 {
+  height: 300px;
+  font-weight: 600;
+  font-size: 50pt;
+  color: white;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 94px;
+
 }
 
 h2 {
-  margin-left: 20%;
+  margin-left: 5%;
+  text-transform: uppercase;
 }
 
 h3, button {
-  margin-left: 25%;
+  margin-left: 10%;
 }
 
 h4 {
@@ -41,5 +63,5 @@ footer {
  footer li {
    display: inline;
    margin: 0 80px;
-   color: #938d8f;
+   color: white;
  }
